@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle'
+
 
 const navItems = ['Home', 'About', 'Projects', 'Contact'];
 
@@ -41,6 +43,10 @@ export default function Navbar() {
             </Link>
           </motion.li>
         ))}
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+        </div>
+
       </ul>
     </motion.nav>
   );

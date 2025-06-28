@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-gray-800 ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CustomCursor />
         {children}
