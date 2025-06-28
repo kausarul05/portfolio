@@ -6,7 +6,7 @@ import Myself from '../../public/assets/myself.png';
 
 export default function Hero() {
     return (
-        <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-teal-600 to-cyan-400 text-white">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
                 {/* Left Content */}
                 <div className="space-y-4 text-center md:text-left">
@@ -24,7 +24,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
-                        I am <span className="text-blue-500">Kausarul</span>
+                        I am <span className="text-orange-300">Kausarul</span>
                     </motion.h1>
 
                     <motion.p
@@ -44,7 +44,7 @@ export default function Hero() {
                         >
                             <a
                                 href="#projects"
-                                className="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 mt-10"
+                                className="inline-block bg-orange-300 font-bold text-white text-lg  px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition-all duration-300 mt-10"
                             >
                                 View Projects
                             </a>
@@ -56,7 +56,7 @@ export default function Hero() {
                         >
                             <a
                                 href="#projects"
-                                className="inline-block border border-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 mt-10"
+                                className="inline-block border border-orange-300 text-slate-100 text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition-all duration-300 mt-10"
                             >
                                 Download CV
                             </a>
@@ -71,15 +71,24 @@ export default function Hero() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
                 >
-                    <Image
-                        src={Myself}
-                        alt="Profile Image"
-                        width={400}
-                        height={400}
-                        className="rounded-2xl shadow-2xl object-cover"
-                    />
+                    <div className="relative rounded-2xl overflow-hidden group">
 
+                        {/* Moving Red Line */}
+                        <span className="absolute top-0 left-0 w-full h-[3px] bg-red-500 animate-[borderRun_3s_linear_infinite]"></span>
+
+                        <Image
+                            src={Myself}
+                            alt="Profile Image"
+                            width={400}
+                            height={400}
+                            className="rounded-2xl object-cover"
+                        />
+                    </div>
                 </motion.div>
+
+
+
+
             </div>
         </section>
     );

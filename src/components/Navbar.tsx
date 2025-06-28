@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className='container mx-auto'>
       <motion.nav
-        className="fixed top-5 container mx-auto flex items-center justify-between px-10 py-5 bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950 bg-opacity-90 backdrop-blur-lg shadow-md z-50 rounded-full"
+        className="fixed top-5 container mx-auto flex items-center justify-between px-10 py-5 bg-gradient-to-r from-teal-600 to-cyan-400 bg-opacity-90 backdrop-blur-lg shadow-md z-50 rounded-full"
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -37,7 +37,7 @@ export default function Navbar() {
             >
               <Link
                 href={`#${item.toLowerCase()}`}
-                className="relative text-gray-300 font-medium transition duration-300 hover:text-blue-400 group"
+                className="relative text-slate-100 font-medium transition duration-300 hover:text-blue-400 group"
               >
                 {item}
                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
