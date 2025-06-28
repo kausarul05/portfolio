@@ -2,20 +2,29 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Myself from '../../public/assets/myself.png';
 
 export default function Hero() {
     return (
         <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
                 {/* Left Content */}
-                <div className="space-y-6 text-center md:text-left">
+                <div className="space-y-4 text-center md:text-left">
+                    <motion.h1
+                        className="text-5xl md:text-3xl font-extrabold leading-tight"
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                    >
+                        Hi,
+                    </motion.h1>
                     <motion.h1
                         className="text-5xl md:text-6xl font-extrabold leading-tight"
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
-                        Hi, I am <span className="text-blue-500">Kausarul</span>
+                        I am <span className="text-blue-500">Kausarul</span>
                     </motion.h1>
 
                     <motion.p
@@ -27,18 +36,32 @@ export default function Hero() {
                         A passionate web developer crafting smooth, animated, modern websites using Next.js, TypeScript, and Tailwind CSS.
                     </motion.p>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.6, duration: 0.6, ease: 'easeOut' }}
-                    >
-                        <a
-                            href="#projects"
-                            className="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+                    <div className='flex gap-10'>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.6, duration: 0.6, ease: 'easeOut' }}
                         >
-                            View Projects
-                        </a>
-                    </motion.div>
+                            <a
+                                href="#projects"
+                                className="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 mt-10"
+                            >
+                                View Projects
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.6, duration: 0.6, ease: 'easeOut' }}
+                        >
+                            <a
+                                href="#projects"
+                                className="inline-block border border-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 mt-10"
+                            >
+                                Download CV
+                            </a>
+                        </motion.div>
+                    </div>
                 </div>
 
                 {/* Right Image */}
@@ -49,12 +72,13 @@ export default function Hero() {
                     transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
                 >
                     <Image
-                        src="/profile.png"
+                        src={Myself}
                         alt="Profile Image"
                         width={400}
                         height={400}
                         className="rounded-2xl shadow-2xl object-cover"
                     />
+
                 </motion.div>
             </div>
         </section>
