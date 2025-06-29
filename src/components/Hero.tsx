@@ -6,7 +6,10 @@ import Myself from '../../public/assets/myself.png';
 
 export default function Hero() {
     return (
-        <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-teal-600 to-cyan-400 text-white">
+        <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-teal-600 to-cyan-400 text-white overflow-hidden relative">
+            {/* Animated Gradient Blob */}
+            <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
+
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
                 {/* Left Content */}
                 <div className="space-y-4 text-center md:text-left">
@@ -69,21 +72,32 @@ export default function Hero() {
                     className="flex justify-center md:justify-end"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
+                    transition={{ delay: 0.5, duration: 0.2, ease: 'easeOut' }}
                 >
-                    <div className="relative rounded-2xl overflow-hidden group">
+                    {/* <div className="relative p-[6px] rounded-2xl  overflow-hidden group"> */}
 
-                        {/* Moving Red Line */}
-                        <span className="absolute top-0 left-0 w-full h-[3px] bg-red-500 animate-[borderRun_3s_linear_infinite]"></span>
+                    {/* Top line */}
+                    {/* <span className="absolute top-0 left-0 w-full h-[3px] bg-cyan-300 animate-[runRight_2s_linear_infinite]"></span> */}
 
-                        <Image
-                            src={Myself}
-                            alt="Profile Image"
-                            width={400}
-                            height={400}
-                            className="rounded-2xl object-cover"
-                        />
-                    </div>
+                    {/* Right line */}
+                    {/* <span className="absolute top-0 right-0 w-[3px] h-full bg-cyan-300 animate-[runDown_2s_linear_infinite]"></span> */}
+
+                    {/* Bottom line */}
+                    {/* <span className="absolute bottom-0 right-0 w-full h-[3px] bg-cyan-300 animate-[runLeft_2s_linear_infinite]"></span> */}
+
+                    {/* Left line */}
+                    {/* <span className="absolute bottom-0 left-0 w-[3px] h-full bg-cyan-300 animate-[runUp_2s_linear_infinite]"></span> */}
+
+                    {/* Image */}
+                    <Image
+                        src={Myself}
+                        alt="Profile Image"
+                        width={400}
+                        height={400}
+                        className="rounded-2xl object-cover"
+                    />
+                    {/* </div> */}
+
                 </motion.div>
 
 

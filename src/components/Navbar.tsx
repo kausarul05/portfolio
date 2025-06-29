@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle'
-
+import Image from 'next/image';
+import logo from "@/../public/assets/logo.png"
 
 const navItems = ['Home', 'About', 'Projects', 'Contact'];
 
@@ -23,7 +24,13 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Kausarul
+          <Image
+            src={logo} // Replace with your logo path
+            alt="Logo"
+            width={120}
+            height={120}
+            className='w-30 h-full object-contain'
+          />
         </motion.div>
 
         {/* Nav Items */}

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 import { useState } from 'react';
+import aboutImage from "@/../public/assets/about.png";
 
 export default function About() {
     const [rotateX, setRotateX] = useState(0);
@@ -30,8 +31,8 @@ export default function About() {
     };
 
     return (
-        <section id="about" className="min-h-screen flex items-center bg-gray-900 text-white px-5 md:px-20 py-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+        <section id="about" className="min-h-screen flex items-center bg-gradient-to-br from-cyan-500 to-teal-400 text-white px-5 md:px-20 py-20">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
                 {/* Left Image / Card */}
                 <motion.div
                     className="flex"
@@ -47,19 +48,19 @@ export default function About() {
                             transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
                             transition: 'transform 0.1s ease',
                         }}
-                        className="relative w-[300px] h-[350px] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-700 shadow-2xl p-6 flex flex-col items-center text-center cursor-pointer"
+                        className="relative w-[500px] h-[550px] rounded-2xl overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-400 shadow-2xl p-6 flex flex-col items-center text-center cursor-pointer"
                     >
                         <Image
-                            src="/profile.png"
+                            src={aboutImage}
                             alt="Profile Image"
                             width={120}
                             height={120}
-                            className="rounded-full border-4 border-blue-600 mb-4"
+                            className="rounded-full border-4 border-orange-300 mb-4 h-40 w-40 object-cover shadow-lg"
                         />
-                        <h3 className="text-2xl font-semibold text-blue-400">Kausarul Islam</h3>
-                        <p className="text-gray-400 text-sm">MERN Stack Developer</p>
+                        <h3 className="text-4xl font-semibold text-orange-300">Kausarul Islam</h3>
+                        <p className="text-slate-100 text-xl">MERN Stack Developer</p>
 
-                        <div className="mt-6 space-y-2 text-gray-300 text-sm">
+                        <div className="mt-6 space-y-2 text-slate-100 text-lg">
                             <p>📍 Mymensingh, Bangladesh</p>
                             <p>📞 +8801868703130</p>
                             <p>✉️ kauserulislam0055@gmail.com</p>
@@ -78,7 +79,7 @@ export default function About() {
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-blue-500 mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-orange-300 mb-4">
                         <Typewriter
                             words={["About Me", "Who I Am", "Why Hire Me?"]}
                             loop={0}
@@ -90,24 +91,24 @@ export default function About() {
                         />
                     </h2>
 
-                    <p className="text-lg text-gray-300 leading-relaxed">
-                        I am <span className="text-blue-400 font-semibold">Kausarul</span>, a passionate and creative web developer focused on building modern, animated, and high-performance web applications.
+                    <p className="text-lg  text-slate-100 leading-relaxed">
+                        I am <span className="text-orange-300 font-semibold">Kausarul</span>, a passionate and creative web developer focused on building modern, animated, and high-performance web applications.
                     </p>
 
-                    <p className="text-lg text-gray-400 leading-relaxed">
-                        I specialize in technologies like <span className="text-blue-400">Next.js</span>, <span className="text-blue-400">React</span>, <span className="text-blue-400">Tailwind CSS</span>, and <span className="text-blue-400">TypeScript</span>. My goal is to craft seamless, engaging, and impactful digital experiences for businesses and individuals.
+                    <p className="text-lg  text-slate-100 leading-relaxed">
+                        I specialize in technologies like <span className="text-orange-300">Next.js</span>, <span className="text-orange-300">React</span>, <span className="text-orange-300">Tailwind CSS</span>, and <span className="text-orange-300">TypeScript</span>. My goal is to craft seamless, engaging, and impactful digital experiences for businesses and individuals.
                     </p>
 
                     <div className="flex gap-5 pt-4">
                         <a
                             href="#projects"
-                            className="bg-blue-600 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+                            className="bg-orange-400 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-orange-500 transition-all duration-300"
                         >
                             View Projects
                         </a>
                         <a
                             href="#contact"
-                            className="border border-blue-600 text-blue-400 text-lg font-semibold px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
+                            className="border border-orange-300 text-slate-100 text-lg font-semibold px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300"
                         >
                             Contact Me
                         </a>

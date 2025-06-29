@@ -2,41 +2,47 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import examtice from "@/../public/assets/examtic.png"
+import azan from "@/../public/assets/azan.png"
+import savarshall from "@/../public/assets/savarshall.png"
+import eurasia from "@/../public/assets/eurasia.png"
+import elegance from "@/../public/assets/elegance.png"
+import webartsfactory from "@/../public/assets/webartsfactory.png"
 
 const projects = [
     {
         name: 'ExamTice',
-        image: '/project-1.jpg',
+        image: examtice,
         description: 'An online exam system built with Next.js, Tailwind CSS and MongoDB.',
         link: 'https://www.examtice.com',
     },
     {
         name: 'Azan Wholesale',
-        image: '/project-2.jpg',
+        image: azan,
         description: 'An ecommerce wholesale platform using React, Node.js and Stripe.',
         link: 'https://www.azanwholesale.com',
     },
     {
         name: 'Savers Hall',
-        image: '/project-3.jpg',
+        image: savarshall,
         description: 'A multi-vendor product management system built with MERN Stack.',
         link: 'https://www.savershall.com',
     },
     {
         name: 'Savers Hall',
-        image: '/project-3.jpg',
+        image: eurasia,
         description: 'A multi-vendor product management system built with MERN Stack.',
         link: 'https://www.savershall.com',
     },
     {
         name: 'Savers Hall',
-        image: '/project-3.jpg',
+        image: elegance,
         description: 'A multi-vendor product management system built with MERN Stack.',
         link: 'https://www.savershall.com',
     },
     {
         name: 'Savers Hall',
-        image: '/project-3.jpg',
+        image: webartsfactory,
         description: 'A multi-vendor product management system built with MERN Stack.',
         link: 'https://www.savershall.com',
     }
@@ -44,9 +50,9 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="min-h-screen bg-gray-900 text-white px-5 md:px-20 py-20">
+        <section id="projects" className="min-h-screen bg-gradient-to-br from-cyan-500 to-teal-400 text-white px-5 md:px-20 py-20">
             <motion.h2
-                className="text-4xl md:text-5xl font-bold text-blue-500 mb-12 text-center"
+                className="text-4xl md:text-5xl font-bold text-orange-300 mb-12 text-center"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -55,7 +61,7 @@ export default function Projects() {
                 My Projects
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 container mx-auto">
                 {projects.map(({ name, image, description, link }, index) => (
                     <motion.a
                         key={name}
@@ -75,7 +81,7 @@ export default function Projects() {
                                 alt={name}
                                 width={600}
                                 height={400}
-                                className="object-cover w-full h-64 group-hover:scale-110 transition-transform duration-700 ease-out"
+                                className="object-cover w-full h-80 group-hover:scale-110 transition-transform duration-700 ease-out"
                             />
                         </div>
 
