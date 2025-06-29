@@ -31,7 +31,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="relative min-h-screen bg-gradient-to-br from-teal-500 to-cyan-400 text-white px-5 md:px-20 py-20 flex items-center overflow-hidden">
+        <section id="contact" className="relative min-h-screen section-bg-1 text-white px-5 md:px-20 py-20 flex items-center overflow-hidden">
             {/* Animated Gradient Blob */}
             <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
 

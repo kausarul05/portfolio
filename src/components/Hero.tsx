@@ -6,7 +6,7 @@ import Myself from '../../public/assets/myself.png';
 
 export default function Hero() {
     return (
-        <section className="h-screen flex items-center px-5 md:px-20 bg-gradient-to-br from-teal-600 to-cyan-400 text-white overflow-hidden relative">
+        <section className="h-screen flex items-center px-5 md:px-20 section-bg-1 text-white overflow-hidden relative">
             {/* Animated Gradient Blob */}
             <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
 
@@ -27,7 +27,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
-                        I am <span className="text-orange-300">Kausarul</span>
+                        I am <span className="text-[#38bdf8]">Kausarul</span>
                     </motion.h1>
 
                     <motion.p
@@ -47,7 +47,7 @@ export default function Hero() {
                         >
                             <a
                                 href="#projects"
-                                className="inline-block bg-orange-300 font-bold text-white text-lg  px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition-all duration-300 mt-10"
+                                className="inline-block bg-[#38bdf8] font-bold text-white text-lg  px-8 py-3 rounded-full shadow-lg hover:bg-[#38bdf8] transition-all duration-300 mt-10"
                             >
                                 View Projects
                             </a>
@@ -59,7 +59,7 @@ export default function Hero() {
                         >
                             <a
                                 href="#projects"
-                                className="inline-block border border-orange-300 text-slate-100 text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition-all duration-300 mt-10"
+                                className="inline-block border border-[#38bdf8] text-slate-100 text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-[#38bdf8] transition-all duration-300 mt-10"
                             >
                                 Download CV
                             </a>

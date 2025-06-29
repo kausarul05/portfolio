@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className='container mx-auto'>
       <motion.nav
-        className="fixed top-5 container mx-auto flex items-center justify-between px-10 py-5 bg-gradient-to-r from-teal-600 to-cyan-400 bg-opacity-90 backdrop-blur-lg shadow-md z-50 rounded-full"
+        className="fixed top-5 container mx-auto flex items-center justify-between px-10 py-5 section-bg-1 bg-opacity-90 backdrop-blur-lg shadow-md z-50 rounded-full"
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}

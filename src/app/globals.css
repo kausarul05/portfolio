@@ -96,3 +96,14 @@ body {
     transform: translateY(-15px);
   }
 }
+
+/* .section-bg-1 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
+} */
+.section-bg-1 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
+}
+
+.section-bg-2 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
+}

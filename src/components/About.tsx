@@ -31,7 +31,7 @@ export default function About() {
     };
 
     return (
-        <section id="about" className="min-h-screen flex items-center bg-gradient-to-br from-cyan-500 to-teal-400 text-white px-5 md:px-20 py-20">
+        <section id="about" className="min-h-screen flex items-center section-bg-2 text-white px-5 md:px-20 py-20">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
                 {/* Left Image / Card */}
                 <motion.div
@@ -55,9 +55,9 @@ export default function About() {
                             alt="Profile Image"
                             width={120}
                             height={120}
-                            className="rounded-full border-4 border-orange-300 mb-4 h-40 w-40 object-cover shadow-lg"
+                            className="rounded-full border-4 border-[#38bdf8] mb-4 h-40 w-40 object-cover shadow-lg"
                         />
-                        <h3 className="text-4xl font-semibold text-orange-300">Kausarul Islam</h3>
+                        <h3 className="text-4xl font-semibold text-[#38bdf8]">Kausarul Islam</h3>
                         <p className="text-slate-100 text-xl">MERN Stack Developer</p>
 
                         <div className="mt-6 space-y-2 text-slate-100 text-lg">
@@ -79,7 +79,7 @@ export default function About() {
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-orange-300 mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#38bdf8] mb-4">
                         <Typewriter
                             words={["About Me", "Who I Am", "Why Hire Me?"]}
                             loop={0}
@@ -92,23 +92,23 @@ export default function About() {
                     </h2>
 
                     <p className="text-lg  text-slate-100 leading-relaxed">
-                        I am <span className="text-orange-300 font-semibold">Kausarul</span>, a passionate and creative web developer focused on building modern, animated, and high-performance web applications.
+                        I am <span className="text-[#38bdf8] font-semibold">Kausarul</span>, a passionate and creative web developer focused on building modern, animated, and high-performance web applications.
                     </p>
 
                     <p className="text-lg  text-slate-100 leading-relaxed">
-                        I specialize in technologies like <span className="text-orange-300">Next.js</span>, <span className="text-orange-300">React</span>, <span className="text-orange-300">Tailwind CSS</span>, and <span className="text-orange-300">TypeScript</span>. My goal is to craft seamless, engaging, and impactful digital experiences for businesses and individuals.
+                        I specialize in technologies like <span className="text-[#38bdf8]">Next.js</span>, <span className="text-[#38bdf8]">React</span>, <span className="text-[#38bdf8]">Tailwind CSS</span>, and <span className="text-[#38bdf8]">TypeScript</span>. My goal is to craft seamless, engaging, and impactful digital experiences for businesses and individuals.
                     </p>
 
                     <div className="flex gap-5 pt-4">
                         <a
                             href="#projects"
-                            className="bg-orange-400 text-white text-lg font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-orange-500 transition-all duration-300"
+                            className="bg-[#38bdf8] text-white text-lg font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-[#38bdf8] transition-all duration-300"
                         >
                             View Projects
                         </a>
                         <a
                             href="#contact"
-                            className="border border-orange-300 text-slate-100 text-lg font-semibold px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300"
+                            className="border border-[#38bdf8] text-slate-100 text-lg font-semibold px-6 py-3 rounded-full hover:bg-[#38bdf8] hover:text-white transition-all duration-300"
                         >
                             Contact Me
                         </a>
