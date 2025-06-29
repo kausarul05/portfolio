@@ -31,9 +31,9 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="relative min-h-screen bg-gray-900 text-white px-5 md:px-20 py-20 flex items-center overflow-hidden">
+        <section id="contact" className="relative min-h-screen bg-gradient-to-br from-teal-500 to-cyan-400 text-white px-5 md:px-20 py-20 flex items-center overflow-hidden">
             {/* Animated Gradient Blob */}
-            <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
+            <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
 
@@ -45,19 +45,19 @@ export default function Contact() {
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     className="space-y-8"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-blue-500">Let’s Work Together</h2>
-                    <p className="text-gray-400 text-lg leading-relaxed">
+                    <h2 className="text-4xl md:text-5xl font-bold text-orange-300">Let’s Work Together</h2>
+                    <p className="text-slate-100 text-lg leading-relaxed">
                         Have a project idea? Or just want to connect? Drop a message and I’ll get back ASAP.
                     </p>
 
                     <div className="flex gap-6 mt-10">
-                        <a href="#" target="_blank" className="p-4 rounded-full border border-gray-700 hover:bg-blue-600 transition-all duration-300 text-xl">
+                        <a href="#" target="_blank" className="p-4 rounded-full border border-orange-300 hover:bg-orange-300 transition-all duration-300 text-xl">
                             <FaFacebookF />
                         </a>
-                        <a href="#" target="_blank" className="p-4 rounded-full border border-gray-700 hover:bg-gray-800 transition-all duration-300 text-xl">
+                        <a href="#" target="_blank" className="p-4 rounded-full border border-orange-300 hover:bg-orange-300 transition-all duration-300 text-xl">
                             <FaGithub />
                         </a>
-                        <a href="#" target="_blank" className="p-4 rounded-full border border-gray-700 hover:bg-blue-500 transition-all duration-300 text-xl">
+                        <a href="#" target="_blank" className="p-4 rounded-full border border-orange-300 hover:bg-orange-300 transition-all duration-300 text-xl">
                             <FaLinkedinIn />
                         </a>
                     </div>
@@ -70,35 +70,35 @@ export default function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     onSubmit={sendEmail}
-                    className="bg-gray-800/40 backdrop-blur-lg p-8 rounded-2xl space-y-6 border border-gray-700 shadow-lg"
+                    className="bg-gray-800/40 backdrop-blur-lg p-8 rounded-2xl space-y-6 border border-orange-300 shadow-lg"
                 >
                     <input
                         type="text"
                         placeholder="Your Name"
                         name="from_name"
                         required
-                        className="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition duration-300"
+                        className="w-full p-4 rounded-lg  bg-amber-100 text-black border border-orange-300 focus:border-orange-300 focus:ring-1 focus:ring-orange-600 outline-none transition duration-300"
                     />
                     <input
                         type="email"
                         placeholder="Your Email"
                         name="from_email"
                         required
-                        className="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition duration-300"
+                        className="w-full p-4 rounded-lg  bg-amber-100 text-black border border-orange-300 focus:border-orange-300 focus:ring-1 focus:ring-orange-300 outline-none transition duration-300"
                     />
                     <textarea
                         rows={5}
                         placeholder="Write your message..."
                         name="message"
                         required
-                        className="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition duration-300"
+                        className="w-full p-4 rounded-lg bg-amber-100 text-black border border-orange-300 focus:border-orange-300 focus:ring-1 focus:ring-orange-300 outline-none transition duration-300"
                     ></textarea>
 
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         type="submit"
-                        className="w-full py-4 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-lg shadow-lg transition-all duration-300"
+                        className="w-full py-4 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-400 text-white font-semibold text-lg shadow-lg transition-all duration-300"
                     >
                         Send Message
                     </motion.button>
